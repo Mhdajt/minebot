@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "minebot",
+  "version": "${version}",
+  "name": "Minebot",
+  "description": "Server-side PvP bot system for Minecraft 26.2 Fabric.",
+  "authors": ["Minebot"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.minebot.Minebot"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
