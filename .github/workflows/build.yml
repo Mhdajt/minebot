@@ -22,11 +22,8 @@ jobs:
         with:
           gradle-version: current
 
-      - name: Make gradlew executable
-        run: chmod +x ./gradlew
-
       - name: Build mod
-        run: ./gradlew build --no-daemon --stacktrace
+        run: gradle build --no-daemon --stacktrace
 
       - name: Upload mod jar artifact
         uses: actions/upload-artifact@v4
